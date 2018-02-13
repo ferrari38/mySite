@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+This is student list
+
+<table>
+  <thead>
+    <tr>
+      <th>苗字</th>
+      <th>名前</th>
+      <th>学校区分</th>
+      <th>学年</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for s in students %}
+      <tr>
+        <td>{{s.f_name}}</td>
+        <td>{{s.l_name}}</td>
+        <td>{{s.school}}</td>
+        <td>{{s.grade}}</td>
+      </tr>
+      {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>

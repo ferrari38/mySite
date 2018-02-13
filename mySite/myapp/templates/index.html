@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+this is app
+{{title}}
+
+  <table>
+    <thead>
+      <tr>
+        <th>名前</th>
+        <th>年齢</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for person in persons %}
+        <tr>
+          <td>{{person.name}}</td>
+          <td>{{person.age}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+
+</body>
+</html>

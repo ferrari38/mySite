@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+This is class list
+
+<table>
+  <thead>
+    <tr>
+      <th>日付</th>
+      <th>時間</th>
+      <th>生徒</th>
+      <th>先生</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for c in classes %}
+      <tr>
+        <td>{{c.date}}</td>
+        <td>{{c.time}}</td>
+        <td>{{c.student}}</td>
+        <td>{{c.teacher}}</td>
+      </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+</body>
+</html>

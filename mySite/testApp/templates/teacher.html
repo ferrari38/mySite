@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<body>
+This is teacher list
+
+<table>
+  <thead>
+    <tr>
+      <th>苗字</th>
+      <th>名前</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for t in teachers %}
+      <tr>
+        <td>{{t.f_name}}</td>
+        <td>{{t.l_name}}</td>
+      </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+</body>
+</html>
